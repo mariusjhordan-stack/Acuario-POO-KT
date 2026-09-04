@@ -26,6 +26,18 @@ fun construirAcuario(){
     val miTorre = TanqueTorre(diametro = 25, alto = 40)
     miTorre.imprimirTamano()
 }
+
+fun probarEjemploPropio() {
+    // Instancia usando el constructor secundario e init
+    val miPc = Computadora("Asus")
+    miPc.mostrarFicha()
+    miPc.conectarInternet()
+    println()
+    val miLaptopGamer = LaptopGamer("MSI", 32, "RTX 4070")
+    miLaptopGamer.mostrarFicha()
+    miLaptopGamer.conectarInternet()
+}
+
 fun crearPeces(){
     val tiburon = Tiburon()
     val pezPayaso = PezPayaso()
@@ -34,9 +46,12 @@ fun crearPeces(){
     println("El pez payaso es color: ${pezPayaso.color}")
     pezPayaso.Comer()
 
+
 }
 fun main(){
     construirAcuario()
     println("Mis peces")
     crearPeces()
+    println("\nEjemplo propio:K")
+    probarEjemploPropio()
 }
