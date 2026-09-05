@@ -45,8 +45,6 @@ fun crearPeces(){
     tiburon.Comer()
     println("El pez payaso es color: ${pezPayaso.color}")
     pezPayaso.Comer()
-
-
 }
 fun main(){
     construirAcuario()
@@ -54,4 +52,8 @@ fun main(){
     crearPeces()
     println("\nEjemplo propio:K")
     probarEjemploPropio()
+    println("\nCodelab")
+    Codelab()
+    println("\nCodelab Desafio ")
+    DesafioCodelab()
 }
